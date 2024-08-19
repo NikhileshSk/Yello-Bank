@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="dashbord.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2><i class="fas fa-university"></i>  Yello Bank</h2>
+            <ul>
+                <li><a href="#account-details"><i class="fas fa-user-circle"></i> Account Details</a></li>
+                <li><a href="#deposit"><i class="fas fa-arrow-circle-down"></i> Deposit</a></li>
+                <li><a href="#withdraw"><i class="fas fa-arrow-circle-up"></i> Withdraw</a></li>
+                <li><a href="#transfer"><i class="fas fa-exchange-alt"></i> Transfer</a></li>
+                <li><a href="#transactions"><i class="fas fa-list"></i> Transactions</a></li>
+                <li> <button onclick="logout()" class="btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button></li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <section id="account-details">
+                <h3><i class="fas fa-user-circle"></i> Account Details</h3>
+                <div class="card">
+                    <p><strong>Account Number:</strong> </p>
+                    <p><strong>Account Holder:</strong>  </p>
+                    <p><strong>Account Type:</strong> </p>
+                    <p><strong>Balance:</strong>₹</p>
+                </div>
+            </section>
+            <section id="deposit">
+                <h3><i class="fas fa-arrow-circle-down"></i> Deposit</h3>
+                <div class="card">
+                    <form action="#">
+                        <div class="input-group">
+                            <label for="deposit-amount"><i class="fa-solid fa-indian-rupee-sign"></i> Amount</label>
+                            <input type="number" id="deposit-amount" name="deposit-amount" required>
+                        </div>
+                        <button onclick="deposit()" class="btn"><i class="fas fa-arrow-circle-down"></i> Deposit</button>
+                    </form>
+                </div>
+            </section>
+            <section id="withdraw">
+                <h3><i class="fas fa-arrow-circle-up"></i> Withdraw</h3>
+                <div class="card">
+                    <form action="#">
+                        <div class="input-group">
+                            <label for="withdraw-amount"><i class="fa-solid fa-indian-rupee-sign"></i> Amount</label>
+                            <input type="number" id="withdraw-amount" name="withdraw-amount" required>
+                        </div>
+                        <button onclick="withdraw()" class="btn"><i class="fas fa-arrow-circle-up"></i> Withdraw</button>
+                    </form>
+                </div>
+            </section>
+            <section id="transfer">
+                <h3><i class="fas fa-exchange-alt"></i> Transfer</h3>
+                <div class="card">
+                    <form action="#">
+                        <div class="input-group">
+                            <label for="transfer-amount"><i class="fa-solid fa-indian-rupee-sign"></i> Amount</label>
+                            <input type="number" id="transfer-amount" name="transfer-amount" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="recipient-account"><i class="fas fa-user"></i> Recipient Account</label>
+                            <input type="text" id="recipient-account" name="recipient-account" required>
+                        </div>
+                        <button onclick="transfer()" class="btn"><i class="fas fa-exchange-alt"></i> Transfer</button>
+                    </form>
+                </div>
+            </section>
+            <section id="transactions">
+                <h3><i class="fas fa-list"></i> Recent Transactions</h3>
+                <div class="card">
+                    <ul>
+                      
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./dashboard.js"></script>
+</body>
+</html>

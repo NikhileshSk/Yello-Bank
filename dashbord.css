@@ -1,0 +1,140 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #29323c;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #29323c;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    height: auto;
+    min-height: 100%;
+}
+
+.sidebar h2 {
+    color: #ffdd57;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2a2d34;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #1c1e22; /* Single background color */
+    color: #f5f5f5;
+    height: 100%; /* Increase height to cover full area */
+    overflow-y: auto;
+}
+
+.main-content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #2a2d34;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #9aa0a6;
+    font-size: 14px;
+}
+
+.input-group label i {
+    margin-right: 10px;
+    color: #ffdd57;
+}
+
+.input-group input {
+    width: 96%; /* Adjusted to 96% width */
+    padding: 12px;
+    border: 1px solid #3a3f47;
+    border-radius: 8px;
+    background-color: #1c1e22;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    border-color: #ffdd57;
+    outline: none;
+}
+
+.btn {
+    background-color: #ffdd57;
+    color: #1c1e22;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #e5c349;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}

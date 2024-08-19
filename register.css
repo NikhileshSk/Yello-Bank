@@ -1,0 +1,106 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #29323c, #485563);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 116vh;
+    margin: 0;
+}
+
+.register-card {
+    width: 500px;
+    height: 100vh;
+    background-color: #1c1e22;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.register-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f5f5f5;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #9aa0a6;
+    font-size: 14px;
+}
+
+.input-group label i {
+    margin-right: 10px;
+    color: #ffdd57;
+}
+
+.input-group input
+ {
+    width:95%;
+    padding: 12px;
+    border: 1px solid #3a3f47;
+    border-radius: 8px;
+    background-color: #2a2d34;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+.input-group select {
+    width:100%;
+    padding: 12px;
+    border: 1px solid #3a3f47;
+    border-radius: 8px;
+    background-color: #2a2d34;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #ffdd57;
+    outline: none;
+}
+
+.register-btn {
+    background-color: #ffdd57;
+    color: #1c1e22;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.register-btn:hover {
+    background-color: #e5c349;
+}
+
+@media (max-width: 768px) {
+    .register-card {
+        padding: 20px;
+    }
+
+    .register-card h2 {
+        font-size: 20px;
+    }
+
+    .register-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
